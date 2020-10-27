@@ -1,2 +1,2 @@
-# App-Dev-League-Website
-Website for App Dev League
+# App Dev League Website
+The official App Dev League website is https://www.appdevleague.org/.
