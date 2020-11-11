@@ -227,13 +227,32 @@
             for(var i = 0; i < document.querySelectorAll('span[data-toggle="counter-up"]').length; i++) {
               document.querySelectorAll('span[data-toggle="counter-up"]')[i].innerHTML = 0;
             }
-            for(var i = 0; i < document.querySelectorAll('span[data-toggle="counter-up"]').length; i++) {
-              var element = document.querySelectorAll('span[data-toggle="counter-up"]')[i];
-              for(var j = 0; j <= finalCounts[i]; j++) {
-                setTimeout(() => {
-                  element.innerHTML = j
-                }, j);
-              }
+            var element1 = document.querySelectorAll('span[data-toggle="counter-up"]')[0];
+            for(let i = 0; i <= finalCounts[0]; i++) {
+              setTimeout(() => {
+                element1.innerHTML = i;
+              }, i);
+            }
+          
+            var element2 = document.querySelectorAll('span[data-toggle="counter-up"]')[1];
+            for(let i = 0; i <= finalCounts[1]; i++) {
+              setTimeout(() => {
+                element2.innerHTML = i;
+              }, i);
+            }
+          
+            var element3 = document.querySelectorAll('span[data-toggle="counter-up"]')[2];
+            for(let i = 0; i <= finalCounts[2]; i++) {
+              setTimeout(() => {
+                element3.innerHTML = i;
+              }, i);
+            }
+          
+            var element4 = document.querySelectorAll('span[data-toggle="counter-up"]')[3];
+            for(let i = 0; i <= finalCounts[3]; i++) {
+              setTimeout(() => {
+                element4.innerHTML = i;
+              }, i);
             }
           
           </script>
