@@ -2030,12 +2030,14 @@ section {
 #about2 .about2-img {
   position: relative;
   margin: 30px 30px 30px 30px;
+  
 }
 
 #about2 .about2-img img {
   width: 100%;
   border: 8px solid #fff;
   transition: .5s;
+
 }
 
 #about2 .about2-img img:hover {
@@ -2045,7 +2047,7 @@ section {
 
 #about2 .about2-img::before {
   position: absolute;
-  left: -31px;
+  left: -100px;
   top: -30px;
   width: 90%;
   height: 92%;
@@ -2053,11 +2055,12 @@ section {
   content: '';
   background-color: #ebf1fa;
   transition: .5s;
+
 }
 
 #about2 .about2-img::after {
   position: absolute;
-  right: -31px;
+  right: -50px;
   bottom: -30px;
   width: 90%;
   height: 92%;
@@ -2065,6 +2068,7 @@ section {
   content: '';
   background-color: #ebf1fa;
   transition: .5s;
+
 }
 
 .about2-content{
@@ -2072,6 +2076,8 @@ section {
   align-items: center;
   width: 90%;
   margin-top: -10%;
+  padding-left: 10%;
+
 }
 
 .header{
