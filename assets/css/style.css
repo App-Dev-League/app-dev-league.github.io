@@ -787,6 +787,9 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+.skills{
+  background-color: rgb(243, 245, 250);
+}
 .skills .content h3 {
   font-weight: 700;
   font-size: 32px;
@@ -846,6 +849,9 @@ section {
 }
 /* Services Section
 --------------------------------*/
+.services{
+  background-color: white;
+}
 #services {
   padding: 60px 0 40px 0;
 }
