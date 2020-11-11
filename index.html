@@ -203,7 +203,7 @@
         <div class="row counters" data-aos="fade-up" data-aos-delay="100">
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">30</span>
+            <span data-toggle="counter-up">30+</span>
             <p>Schools Worked With</p>
           </div>
 
@@ -213,12 +213,12 @@
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">1000</span>
+            <span data-toggle="counter-up">1000+</span>
             <p>Students Reached</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">40</span>
+            <span data-toggle="counter-up">40+</span>
             <p>Hours Spent Teaching</p>
           </div>
           
@@ -243,13 +243,17 @@
             });
             var finalCounts = [30, 5, 1000, 40];
             for(var i = 0; i < document.querySelectorAll('span[data-toggle="counter-up"]').length; i++) {
-              document.querySelectorAll('span[data-toggle="counter-up"]')[i].innerHTML = 0;
+              if(document.querySelectorAll('span[data-toggle="counter-up"]')[i].innerHTML.includes("+")) {
+                document.querySelectorAll('span[data-toggle="counter-up"]')[i].innerHTML = "0+";
+              } else {
+                document.querySelectorAll('span[data-toggle="counter-up"]')[i].innerHTML = "0";
+              }
             }
             function updateCounters() {
               var element1 = document.querySelectorAll('span[data-toggle="counter-up"]')[0];
               for(let i = 0; i <= finalCounts[0]; i++) {
                 setTimeout(() => {
-                  element1.innerHTML = i;
+                  element1.innerHTML = i + "+";
                 }, (1500 * i) / finalCounts[0]);
               }
 
@@ -263,14 +267,14 @@
               var element3 = document.querySelectorAll('span[data-toggle="counter-up"]')[2];
               for(let i = 0; i <= finalCounts[2]; i++) {
                 setTimeout(() => {
-                  element3.innerHTML = i;
+                  element3.innerHTML = i + "+";
                 }, (1500 * i) / finalCounts[2]);
               }
 
               var element4 = document.querySelectorAll('span[data-toggle="counter-up"]')[3];
               for(let i = 0; i <= finalCounts[3]; i++) {
                 setTimeout(() => {
-                  element4.innerHTML = i;
+                  element4.innerHTML = i + "+";
                 }, (1500 * i) / finalCounts[3]);
               }
             }
