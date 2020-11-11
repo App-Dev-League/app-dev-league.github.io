@@ -2070,6 +2070,8 @@ section {
 .about2-content{
   line-height: 250%;
   align-items: center;
+  width: 90%;
+  margin-top: -10%;
 }
 
 .header{
@@ -2103,7 +2105,8 @@ section {
 }
 
 .left{
-  margin-left: 15%;
+
+  margin-bottom: -5%;
 }
 
 .left p{
