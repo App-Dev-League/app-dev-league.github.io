@@ -221,8 +221,28 @@
             <span data-toggle="counter-up">40</span>
             <p>Hours Spent Teaching</p>
           </div>
+          
+          <script>
+            var finalCounts = [30, 5, 1000, 40];
+            for(let i = 0; i < document.querySelectorAll('span[data-toggle="counter-up"]').length; i++) {
+              document.querySelectorAll('span[data-toggle="counter-up"]')[i].innerHTML = 0;
+            }
+            for(let i = 0; i < document.querySelectorAll('span[data-toggle="counter-up"]').length; i++) {
+              var element = document.querySelectorAll('span[data-toggle="counter-up"]')[i];
+              for(let j = 0; j <= finalCounts[i]; j++) {
+                setTimeout(function() {
+                  element.innerHTML = j
+                }, j);
+              }
+            }
+          
+          </script>
+          
+          
 
         </div>
+        
+    </div>
 
 
     </section><!-- End Skills Section -->
