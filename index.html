@@ -224,13 +224,13 @@
           
           <script>
             var finalCounts = [30, 5, 1000, 40];
-            for(let i = 0; i < document.querySelectorAll('span[data-toggle="counter-up"]').length; i++) {
+            for(var i = 0; i < document.querySelectorAll('span[data-toggle="counter-up"]').length; i++) {
               document.querySelectorAll('span[data-toggle="counter-up"]')[i].innerHTML = 0;
             }
-            for(let i = 0; i < document.querySelectorAll('span[data-toggle="counter-up"]').length; i++) {
+            for(var i = 0; i < document.querySelectorAll('span[data-toggle="counter-up"]').length; i++) {
               var element = document.querySelectorAll('span[data-toggle="counter-up"]')[i];
-              for(let j = 0; j <= finalCounts[i]; j++) {
-                setTimeout(function() {
+              for(var j = 0; j <= finalCounts[i]; j++) {
+                setTimeout(() => {
                   element.innerHTML = j
                 }, j);
               }
