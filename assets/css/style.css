@@ -1994,3 +1994,85 @@ section {
   font-size: 14px;
   color: rgb(70, 104, 162);
 }
+
+/* about2 Us Section
+--------------------------------*/
+#about2 {
+  padding: 80px 0;
+}
+
+#about2 .about2-content {
+  padding-top: 40px;
+}
+
+#about2 .about2-content h2 {
+  color: #413e66;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#about2 .about2-content h3 {
+  color: #696592;
+  font-weight: 400;
+  font-size: 22px;
+  font-style: italic;
+}
+
+#about2 .about2-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about2 .about2-content ul li {
+  padding-bottom: 10px;
+}
+
+#about2 .about2-content ul li i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #1bb1dc;
+}
+
+#about2 .about2-img {
+  position: relative;
+  margin: 30px 30px 30px 30px;
+}
+
+#about2 .about2-img img {
+  width: 100%;
+  border: 8px solid #fff;
+  transition: .5s;
+}
+
+#about2 .about2-img img:hover {
+  width: 100%;
+  transform: scale(1.03);
+}
+
+#about2 .about2-img::before {
+  position: absolute;
+  left: -31px;
+  top: -30px;
+  width: 90%;
+  height: 92%;
+  z-index: -1;
+  content: '';
+  background-color: #ebf1fa;
+  transition: .5s;
+}
+
+#about2 .about2-img::after {
+  position: absolute;
+  right: -31px;
+  bottom: -30px;
+  width: 90%;
+  height: 92%;
+  z-index: -1;
+  content: '';
+  background-color: #ebf1fa;
+  transition: .5s;
+}
+
+.about2-content{
+  margin-top: 15%;
+}
