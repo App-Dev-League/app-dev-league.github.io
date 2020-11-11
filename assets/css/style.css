@@ -2095,3 +2095,7 @@ section {
   color: black;
   font-family: "Open Sans", sans-serif;
 }
+
+.big h2{
+  font-size: 35px;
+}
