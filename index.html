@@ -223,36 +223,56 @@
           </div>
           
           <script>
+            var updatedCounters = false;
+            window.addEventListener('scroll', function() {
+              var element = document.querySelectorAll('span[data-toggle="counter-up"]')[0];
+              var position = element.getBoundingClientRect();
+
+              
+              if(position.top >= 0 && position.bottom <= window.innerHeight) {
+                // fully visible
+              }
+
+              
+              if(position.top < window.innerHeight && position.bottom >= 0) {
+                if(!updatedCounters) {
+                  updatedCounters = true;
+                  updateCounters();
+                }
+              }
+            });
             var finalCounts = [30, 5, 1000, 40];
             for(var i = 0; i < document.querySelectorAll('span[data-toggle="counter-up"]').length; i++) {
               document.querySelectorAll('span[data-toggle="counter-up"]')[i].innerHTML = 0;
             }
-            var element1 = document.querySelectorAll('span[data-toggle="counter-up"]')[0];
-            for(let i = 0; i <= finalCounts[0]; i++) {
-              setTimeout(() => {
-                element1.innerHTML = i;
-              }, (1000 * i) / finalCounts[0]);
-            }
-          
-            var element2 = document.querySelectorAll('span[data-toggle="counter-up"]')[1];
-            for(let i = 0; i <= finalCounts[1]; i++) {
-              setTimeout(() => {
-                element2.innerHTML = i;
-              }, (1000 * i) / finalCounts[1]);
-            }
-          
-            var element3 = document.querySelectorAll('span[data-toggle="counter-up"]')[2];
-            for(let i = 0; i <= finalCounts[2]; i++) {
-              setTimeout(() => {
-                element3.innerHTML = i;
-              }, (1000 * i) / finalCounts[2]);
-            }
-          
-            var element4 = document.querySelectorAll('span[data-toggle="counter-up"]')[3];
-            for(let i = 0; i <= finalCounts[3]; i++) {
-              setTimeout(() => {
-                element4.innerHTML = i;
-              }, (1000 * i) / finalCounts[3]);
+            function updateCounters() {
+              var element1 = document.querySelectorAll('span[data-toggle="counter-up"]')[0];
+              for(let i = 0; i <= finalCounts[0]; i++) {
+                setTimeout(() => {
+                  element1.innerHTML = i;
+                }, (1000 * i) / finalCounts[0]);
+              }
+
+              var element2 = document.querySelectorAll('span[data-toggle="counter-up"]')[1];
+              for(let i = 0; i <= finalCounts[1]; i++) {
+                setTimeout(() => {
+                  element2.innerHTML = i;
+                }, (1000 * i) / finalCounts[1]);
+              }
+
+              var element3 = document.querySelectorAll('span[data-toggle="counter-up"]')[2];
+              for(let i = 0; i <= finalCounts[2]; i++) {
+                setTimeout(() => {
+                  element3.innerHTML = i;
+                }, (1000 * i) / finalCounts[2]);
+              }
+
+              var element4 = document.querySelectorAll('span[data-toggle="counter-up"]')[3];
+              for(let i = 0; i <= finalCounts[3]; i++) {
+                setTimeout(() => {
+                  element4.innerHTML = i;
+                }, (1000 * i) / finalCounts[3]);
+              }
             }
           
           </script>
