@@ -1556,12 +1556,7 @@ section {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background: #f3f5fa;
-  min-height: 40px;
-  margin-top: 72px;
-}
+
 
 @media (max-width: 992px) {
   .breadcrumbs {
@@ -2073,7 +2068,6 @@ section {
 }
 
 .about2-content{
-
   line-height: 250%;
 }
 
@@ -2087,7 +2081,7 @@ section {
 }
 .contents{
  align-items: center;
- padding-top: 40px;
+ padding-top: 50px;
 
 }
 
@@ -2098,4 +2092,7 @@ section {
 
 .big h2{
   font-size: 35px;
+}
+.bigspacing{
+  line-height: 250%;
 }
