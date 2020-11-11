@@ -2069,6 +2069,7 @@ section {
 
 .about2-content{
   line-height: 250%;
+  align-items: center;
 }
 
 .header{
@@ -2095,4 +2096,16 @@ section {
 }
 .bigspacing{
   line-height: 250%;
+}
+
+.center{
+  justify-content: center;
+}
+
+.left{
+  margin-left: 15%;
+}
+
+.left p{
+  font-size: 25px;
 }
