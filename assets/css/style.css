@@ -1977,3 +1977,20 @@ section {
 #testimonials .owl-dot.active {
   background-color: #1bb1dc;
 }
+
+
+.counters {
+  padding-top: 40px;
+}
+.counters span {
+  font-weight: bold;
+  font-size: 35px;
+  display: block;
+  color: rgb(70, 104, 162);
+}
+.counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: rgb(70, 104, 162);
+}

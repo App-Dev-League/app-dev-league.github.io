@@ -119,6 +119,7 @@
     });
   });
 
+
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
@@ -181,6 +182,8 @@
     });
   });
 
+
+
   // Portfolio details carousel
   $(".portfolio-details-carousel").owlCarousel({
     autoplay: true,
@@ -188,6 +191,7 @@
     loop: true,
     items: 1
   });
+
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
     autoplay: true,
@@ -199,12 +203,16 @@
   // Init AOS
   function aos_init() {
     AOS.init({
-      duration: 1000,
+      duration: 1500,
       once: true
     });
   }
   $(window).on('load', function () {
     aos_init();
   });
+
+
+
+  // jQuery counterUp (used in Whu Us section)
 
 })(jQuery);
