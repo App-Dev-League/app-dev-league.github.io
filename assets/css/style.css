@@ -2006,8 +2006,7 @@ section {
 }
 
 #about2 .about2-content h2 {
-  color: #413e66;
-  font-family: "Montserrat", sans-serif;
+  color: rgb(68, 68, 68);
   font-weight: 700;
 }
 
@@ -2074,5 +2073,25 @@ section {
 }
 
 .about2-content{
-  margin-top: 15%;
+
+  line-height: 250%;
+}
+
+.header{
+  background-color: rgb(243, 245, 250);
+  width: 100%;
+  margin-right: 50%;
+  align-items: center;
+  height: 125px;
+  
+}
+.contents{
+ align-items: center;
+ padding-top: 40px;
+
+}
+
+.name h2{
+  color: black;
+  font-family: "Open Sans", sans-serif;
 }
