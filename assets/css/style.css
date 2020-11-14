@@ -2118,3 +2118,12 @@ section {
 .left p{
   font-size: 25px;
 }
+
+.card-deck img{
+  height: 250px;
+  width: 250px;
+}
+
+.card-deck .card{
+ padding: 10px; 
+}
