@@ -2138,7 +2138,7 @@ section {
 .btn:hover{
   background-color: black;
 }
-.card-deck .card{
+.getinolv .card-deck .card{
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -2148,15 +2148,15 @@ section {
   box-shadow: 0 10px 29px 0 #c4c4c4;
   transition: all 0.3s ease-in-out;
 }
-.card-deck .card:hover{
+.getinolv .card-deck .card:hover{
   transform: scale(1.05);
 }
 
-.card:hover .card-title{
+.getinolv .card:hover .card-title{
   color: rgb(103, 143, 156);
 }
 
-.card-deck .card .red{
+.getinolv .card-deck .card .red{
   background-color: red;
   color: white;
 }
