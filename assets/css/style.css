@@ -2136,7 +2136,7 @@ section {
   border: rgb(61, 77, 106);
 }
 .btn:hover{
-  background-color: black;
+  background-color: rgb(103, 143, 156);
 }
 .getinolv .card-deck .card{
   padding: 30px;
