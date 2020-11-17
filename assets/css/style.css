@@ -2149,7 +2149,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 .card-deck .card:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .card:hover .card-title{
