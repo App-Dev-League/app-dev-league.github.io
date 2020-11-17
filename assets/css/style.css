@@ -2130,3 +2130,11 @@ section {
 .getInvolved-Main {
   
 }
+
+.btn {
+  background-color: rgb(61, 77, 106);
+  border: rgb(61, 77, 106);
+}
+.btn:hover{
+  background-color: black;
+}
