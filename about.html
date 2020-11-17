@@ -165,7 +165,7 @@
             <h2 >Leadership Team</h2>
             <br/>
 
-            <div class="card-deck" style="width: 120%;margin-left: -10%;">
+            <div class="card-deck card-deck-custom">
               
               <div class="card card-custom">
                 <div class="card-header-custom" style="background-color: #81ecec;">
@@ -230,6 +230,26 @@
               }
               .card-custom {
                 height: fit-content;
+              }
+              .card-deck-custom {
+                width: 120%;
+                margin-left: -10%;
+              }
+              @media screen and (max-width: 1100) {
+                .card-deck-custom {
+                  width: 110%;
+                  margin-left: -5%;
+                }
+                .card-header-custom {
+                  height: 230px;
+                }
+                .card-heading-custom {
+                  font-size: 1.25em !important;
+                }
+              }
+              
+              @media screen and (max-width: 1000) {
+              
               }
             </style>
 
