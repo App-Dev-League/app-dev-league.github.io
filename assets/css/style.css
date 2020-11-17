@@ -2155,3 +2155,8 @@ section {
 .card:hover .card-title{
   color: rgb(103, 143, 156);
 }
+
+.card-deck .card .red{
+  background-color: red;
+  color: white;
+}
