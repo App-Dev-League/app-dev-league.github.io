@@ -2138,3 +2138,20 @@ section {
 .btn:hover{
   background-color: black;
 }
+.card-deck .card{
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 #c4c4c4;
+  transition: all 0.3s ease-in-out;
+}
+.card-deck .card:hover{
+  transform: scale(1.1);
+}
+
+.card:hover .card-title{
+  color: rgb(103, 143, 156);
+}
