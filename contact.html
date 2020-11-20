@@ -86,7 +86,21 @@
      
           <br/>
           
-          <iframe src="https://codetools.togatech.org/contact-form/KabirR/XV32iSd9cp/contact" style="width: 100%; height: auto;"></iframe>
+          <iframe id="contact-frame" src="https://codetools.togatech.org/contact-form/KabirR/XV32iSd9cp/contact" style="overflow:auto;width:100%" frameborder="0"></iframe>
+        
+          <script>
+
+            function resizeIFrameToFitContent(iFrame) {
+              iFrame.width = iFrame.contentWindow.document.body.scrollWidth;
+              iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+            }
+  
+            window.addEventListener('DOMContentLoaded', function(e) {
+              var iFrame = document.getElementById('contact-frame');
+              resizeIFrameToFitContent(iFrame);
+            });
+
+          </script>
         </center>
 
       </div>
