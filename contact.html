@@ -100,8 +100,12 @@
             // Listen to message from child IFrame window
             eventer(messageEvent, function (e) {
               
-              if(typeof e == "string" && e.data.includes("TOGATECH_CODETOOLS_FRAME")) {
-                alert(e.data);   
+              try {
+                if(e.data.includes("TOGATECH_CODETOOLS_FRAME")) {
+                  alert(e.data);   
+                }
+              } catch(err) {
+              
               }
               
             }, false); 
