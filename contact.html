@@ -90,15 +90,18 @@
         
           <script>
 
-            function resizeIFrameToFitContent(iFrame) {
-              iFrame.width = iFrame.contentWindow.document.body.scrollWidth;
-              iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
-            }
-  
-            window.addEventListener('DOMContentLoaded', function(e) {
-              var iFrame = document.getElementById('contact-frame');
-              resizeIFrameToFitContent(iFrame);
-            });
+            // Here "addEventListener" is for standards-compliant web browsers and "attachEvent" is for IE Browsers.
+            var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+            var eventer = window[eventMethod];
+
+
+            var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+
+            // Listen to message from child IFrame window
+            eventer(messageEvent, function (e) {
+              alert(e.data);
+              
+            }, false); 
 
           </script>
         </center>
