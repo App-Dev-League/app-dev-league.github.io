@@ -102,7 +102,10 @@
               
               try {
                 if(e.data.includes("TOGATECH_CODETOOLS_FRAME")) {
-                  alert(e.data);   
+                  var size = JSON.parse(e.data.replace("TOGATECH_CODETOOLS_FRAME", ""));
+                  var frame = document.querySelector('#contact-frame');
+                  frame.width = size.width;
+                  frame.height = size.height;
                 }
               } catch(err) {
               
