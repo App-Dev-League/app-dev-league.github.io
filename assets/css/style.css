@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #47b2e4;
 }
 
@@ -196,9 +196,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #0c3c53;
 }
 
-.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+/* .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
   color: #47b2e4;
-}
+} */
 
 .nav-menu .drop-down > a:after {
   content: "\ea99";
@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Get Startet Button */
+/* Get Started Button */
 .get-started-btn {
   margin-left: 25px;
   color: #fff;
