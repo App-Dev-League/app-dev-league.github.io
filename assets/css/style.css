@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
 }
 
-nav-menu a:hover, .nave-menu .active > a {
+nav-menu a:hover, .nav-menu .active > a {
   color: #47b2e4;
 }
 
