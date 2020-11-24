@@ -94,7 +94,7 @@
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="assets/img/eventsimg.jpeg" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">December Camp</h5>
+              <h5 class="card-title"><a href="#">December Camp</a></h5>
               <p class="text-muted">11/21-11/24</p>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn btn-primary">Read More</a>
@@ -115,8 +115,8 @@
             .card:hover {
               transform: scale(1.1);
             }
-            .card:hover > .card-body > .card-title {
-              color: #1bb1dc;
+            .card:not(:hover) > .card-body > .card-title > a {
+              color: #000000;
             }
             .card-img-top {
               border-top-left-radius: 15px;
@@ -128,7 +128,7 @@
             <div class="card">
               <img class="card-img-top" src="assets/img/images.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Learn to code Workshop</h5>
+                <h5 class="card-title"><a href="#">Learn to code Workshop</a></h5>
                 <p class="card-text">This 90 min interactive workshop will be geared towards students with no prior coding experience. You will learn about computer science, how to code in JavaScript, and build 3 cool projects!</p>
                 <a href="#" class="btn btn-primary">Read More</a>
 
@@ -137,7 +137,7 @@
             <div class="card">
               <img class="card-img-top" src="assets/img/images.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">App Dev Webinar</h5>
+                <h5 class="card-title"><a href="#">App Dev Webinar</a></h5>
                 <p class="card-text">No prior programming experience needed. This 2-hour long interactive webinar will introduce students to computer science generally and will focus on website and application development.</p>
                 <a href="#" class="btn btn-primary">Read More</a>
 
@@ -146,7 +146,7 @@
             <div class="card">
               <img class="card-img-top" src="assets/img/images.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">AI Webinar</h5>
+                <h5 class="card-title"><a href="#">AI Webinar</a></h5>
                 <p class="card-text"> No prior programming experience needed. This 2-hour long interactive webinar will introduce students to computer science generally and will focus on artificial intelligence and machine learning.</p>
                 <a href="#" class="btn btn-primary">Read More</a>
               </div>
@@ -159,7 +159,7 @@
             <div class="card">
               <img class="card-img-top" src="assets/img/images.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Intro to Program</h5>
+                <h5 class="card-title"><a href="#">Intro to Programming</a></h5>
                 <p class="card-text">No prior programming experience needed. This 4-week long course will provide a strong introduction to programming. Students will learn the Python coding language and will build projects throughout the course.</p>
                 <a href="#" class="btn btn-primary">Read More</a>
               </div>
@@ -167,7 +167,7 @@
             <div class="card">
               <img class="card-img-top" src="assets/img/images.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Basic Web Dev</h5>
+                <h5 class="card-title"><a href="#">Basic Web Dev</a></h5>
                 <p class="card-text">No prior programming experience needed. In this 5-week course, students will learn the basics of front-end web programming using various tools.  Numerous websites will be created throughout the course.</p>
                 <a href="#" class="btn btn-primary">Read More</a>
               </div>
@@ -175,7 +175,7 @@
             <div class="card">
               <img class="card-img-top" src="assets/img/images.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Basic App Dev</h5>
+                <h5 class="card-title"><a href="#">Basic App Dev</a></h5>
                 <p class="card-text">No prior programming experience needed. By the end of this 4-week long course, students will be able build over 10 apps. They will also become more creative as the course progresses.</p>
                 <a href="#" class="btn btn-primary">Read More</a>
               </div>
@@ -189,12 +189,6 @@
 
       </div>
     </div>
-
-    <style>
-      .events .card:hover{
-        transform: (1.05);
-      }
-    </style>
     </section><!-- End Breadcrumbs -->
 
   </main><!-- End #main -->
