@@ -92,7 +92,7 @@
 
           <h2 style="margin-bottom: 25px">Upcoming Events</h2>
 
-          <div class="card" style="width: 50%;">
+          <div class="card card-large">
             <img class="card-img-top" src="/assets/img/eventsimg.jpeg" alt="Image">
             <div class="card-body">
               <h5 class="card-title"><a href="#">December Camp</a></h5>
@@ -113,8 +113,14 @@
               border-radius: 15px;
               transition: transform 0.2s ease-in-out;
             }
+            .card-large {
+              width: 50%;
+            }
             .card:hover {
               transform: scale(1.1);
+            }
+            .card-large:hover {
+              transform: scale(1.05) !important;
             }
             .card:not(:hover) > .card-body > .card-title > a {
               color: #000000;
