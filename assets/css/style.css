@@ -2173,3 +2173,8 @@ section {
   background-color: red;
   color: white;
 }
+
+.events .header {
+  height: 250px;
+}
+
