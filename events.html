@@ -111,14 +111,15 @@
           <br/>
 
           <div class="card card-large">
-            <img class="card-img-top" src="/assets/img/events/december-camp-dec-2020.jpeg" alt="Image">
+            <img class="card-img-top card-img-clickable" src="/assets/img/events/december-camp-dec-2020.jpeg" alt="Image">
+            <button class="card-button btn btn-primary">Sign Up</button>
             <div class="card-body">
               <h5 class="card-title"><a href="/events/december-camp-dec-2020">December Camp</a></h5>
               <p class="text-muted">12/21-12/24</p>
               <p class="card-text">This CS Winter Boot Camp is geared towards students with some programming experience in grades 5-12. We will cover topics ranging from web dev to artificial intelligence in an interactive and hands-on manner, and you will have the necessary skills to do the impossible! We strongly recommend you attend.</p>
               <a href="/events/december-camp-dec-2020" target="_blank" class="btn btn-primary">Learn More</a>
             </div>
-          </div> 
+          </div>
 
           <br/>
           <h2>Past Events</h2>
@@ -153,6 +154,31 @@
               object-fit: cover;
               margin-left: -10px;
               margin-top: -10px;
+            }
+            .card > .card-img-top {
+                height: 250px;
+                object-fit: cover;
+              
+            }
+            .card > .card-button {
+              display: none;
+              opacity: 0;
+              position: absolute;
+              left: 50%;
+              top: 125px;
+              transform: translate(-50%, -50%);
+              transition: opacity 0.4s ease-in-out;
+            }
+            .card-img-clickable {
+              filter: brightness(1);
+              transition: filter 0.4s ease-in-out;
+            }
+            .card-img-clickable:hover {
+              filter: brightness(0.5);
+            }
+            .card-img-clickable:hover ~ .card-button {
+              display: block;
+              opacity: 1;
             }
           </style>
 
