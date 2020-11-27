@@ -92,45 +92,6 @@
             <p style="font-size: 5em;margin-bottom: 0;"><i class="fas fa-lock"></i></p>
             <p><b>This privacy policy applies to only internally-used applications and does not apply to the website.</b></p><p style="text-align: left;">The internal applications are not built, and code is hosted on GitHub in a private directory only available to users of the application. By looking at the programs, you will be able to clearly see that App Dev League, Inc. does not store any data outside of your computer. Our API calls go directly through Google, and the OAuth 2.0 consent information is stored locally on your computer (never sent outside of your computer by App Dev League, Inc.).</p>
           </center>
-          <style>
-            /* Hide scrollbar for Chrome, Safari and Opera */
-            #contact-frame::-webkit-scrollbar {
-              display: none;
-            }
-
-            /* Hide scrollbar for IE, Edge and Firefox */
-            #contact-frame {
-              -ms-overflow-style: none;  /* IE and Edge */
-              scrollbar-width: none;  /* Firefox */
-            }
-          </style>
-          <script>
-
-            // Here "addEventListener" is for standards-compliant web browsers and "attachEvent" is for IE Browsers.
-            var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-            var eventer = window[eventMethod];
-
-
-            var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
-
-            // Listen to message from child IFrame window
-            eventer(messageEvent, function (e) {
-              
-              try {
-                if(e.data.includes("TOGATECH_CODETOOLS_FRAME")) {
-                  var size = JSON.parse(e.data.replace("TOGATECH_CODETOOLS_FRAME", ""));
-                  var frame = document.querySelector('#contact-frame');
-                  frame.width = size.width;
-                  frame.height = size.height;
-                }
-              } catch(err) {
-              
-              }
-              
-            }, false); 
-
-          </script>
-        </center>
 
       </div>
     </section><!-- End Breadcrumbs -->
