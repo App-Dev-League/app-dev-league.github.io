@@ -903,21 +903,28 @@ App Dev League's Basic Web Dev is was awesome. I went into it trying to learn ab
   </footer><!-- End Footer -->
                                                                              
   <!-- ======= Modal ======= -->
-  <div class="custom-modal">
+  <div class="custom-modal" id="events-modal">
     <p style="margin: 0;">Due to COVID restrictions, all events will be held through the Zoom video conferencing platform. Reference the <a href="/events" target="_blank">events</a> page for all our virtual events!</p>
   </div>
+
+  <script>
+    setTimeout(function() {
+      document.querySelector("#events-modal").style.transform = "translate(calc(-100% - 20px), calc(-100% - 20px))";
+    }, 5000);
+  </script>
   
   <style>
     .custom-modal {
       position: fixed;
-      left: calc(100% - 20px);
-      top: calc(100% - 20px);
-      transform: translate(-100%, -100%);
+      left: 100%;
+      top: 100%;
+      transform: translate(0, calc(-100% - 20px));
       width: 60%;
       max-width: 300px;
       background-color: #ffffff;
       padding: 10px;
       box-shadow: 0 0 26px 0 #c4c4c4;
+      transition: transform 0.5s ease-in-out;
     }
 
     .custom-modal > p {
