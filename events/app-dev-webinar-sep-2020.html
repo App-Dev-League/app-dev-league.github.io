@@ -164,7 +164,15 @@
                     border: 1px solid #000000;
                     padding: 10px;
                     border-radius: 20px;
-                    width: 75%;
+                    width: max-content;
+                    max-width: 75%;
+                    transform: scale(1);
+                    box-shadow: 0 0 26px 0 #000000;
+                    transition: transform 0.2s ease-in-out;
+                  }
+                  
+                  .testimonial-left:hover {
+                    transform: scale(1.05);
                   }
                   
                   .testimonial-right {
@@ -172,8 +180,16 @@
                     border: 1px solid #000000;
                     padding: 10px;
                     border-radius: 20px;
-                    width: 75%;
-                    margin-left: 25%;
+                    width: max-content;
+                    max-width: 75%;
+                    margin-left: 100%;
+                    transform: translateX(-100%) scale(1);
+                    box-shadow: 0 0 26px 0 #000000;
+                    transition: transform 0.2s ease-in-out;
+                  }
+                  
+                  .testimonial-right:hover {
+                    transform: translateX(-100%) scale(1.05);
                   }
                 </style>
           
