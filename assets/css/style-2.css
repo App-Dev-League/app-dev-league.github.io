@@ -1,0 +1,21 @@
+.mod-row-gi-su {
+    padding-bottom: 0rem !important;
+    margin-left: auto;
+}
+
+.mod-exec-cards {
+    margin: 0!important;
+    width: 97%!important;
+}
+
+.pad-left {
+    padding-left: 1rem;
+}
+
+.customWideContainer {
+    width: 80%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin: auto;
+}
