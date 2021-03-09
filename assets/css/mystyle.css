@@ -1,0 +1,11 @@
+.no-pad-bottom {
+    padding-bottom: 0rem !important;
+}
+
+.customWideContainer {
+    width: 75%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin: auto;
+}
