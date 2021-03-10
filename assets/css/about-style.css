@@ -1,15 +1,6 @@
-.mod-row-gi-su {
-    padding-bottom: 0rem !important;
-    margin-left: auto;
-}
-
 .mod-exec-cards {
-    margin: 0!important;
-    width: 97%!important;
-}
-
-.pad-left {
-    padding-left: 1rem;
+    margin: 0 !important;
+    width: 97% !important;
 }
 
 #sponsors {
@@ -17,7 +8,7 @@
 }
 
 .sponsordeck {
-    margin: 2rem auto!important;
+    margin: 2rem auto !important;
 }
 
 .customWideContainer {

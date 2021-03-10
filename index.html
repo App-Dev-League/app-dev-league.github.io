@@ -7,11 +7,11 @@
 
     <title>Home | App Dev League</title>
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="App Dev League"/>
-    <meta property="og:title" content ="Home"/>
-    <meta property="og:image" content="https://appdevleague.org/assets/img/favicon.png"/>
-    <meta property="og:url" content="https://appdevleague.org"/>
-    <meta property="og:description" content="App Dev League, a student-led non profit, is devoted to bringing computer science education to underrepresented students."/>
+    <meta property="og:site_name" content="App Dev League" />
+    <meta property="og:title" content="Home" />
+    <meta property="og:image" content="https://appdevleague.org/assets/img/favicon.png" />
+    <meta property="og:url" content="https://appdevleague.org" />
+    <meta property="og:description" content="App Dev League, a student-led non profit, is devoted to bringing computer science education to underrepresented students." />
 
     <!-- Favicons -->
     <link href="/assets/img/favicon.png" rel="icon">
@@ -32,6 +32,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/index-style.css" rel="stylesheet" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167896725-1"></script>
@@ -71,14 +72,14 @@
                         </ul>
                     </li>
                     <li class="drop-down"><a href="#">Initiatives</a>
-                      <ul>
-                          <li><a href="/events">Events</a></li>
-                          <li><a href="https://appathon.appdevleague.org">Appathon</a></li>
-                          <li><a href="/mentorship">Mentorship Program</a></li>
-                          <li><a href="/app">Teaching App</a></li>
-                          <li><a href="https://www.youtube.com/channel/UCxhMD8Fvm5LP6QzdrYnFixA">YouTube</a></li>
-                      </ul>
-                  </li>
+                        <ul>
+                            <li><a href="/events">Events</a></li>
+                            <li><a href="https://appathon.appdevleague.org">Appathon</a></li>
+                            <li><a href="/mentorship">Mentorship Program</a></li>
+                            <li><a href="/app">Teaching App</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCxhMD8Fvm5LP6QzdrYnFixA">YouTube</a></li>
+                        </ul>
+                    </li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
             </nav><!-- .nav-menu -->
@@ -98,10 +99,20 @@
                     <h2>Diversifying the Developer Community</h2>
                     <div class="d-lg-flex">
                         <a href="/get-involved" class="btn-get-started scrollto">Get Involved</a>
+                        <a href="/events" class="btn-get-started" target="_blank" style="margin-left: 1rem">View Events</a>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="/assets/img/hero-img.png" class="img-fluid animated" alt="">
+                    <!-- <img src="/assets/img/hero-img.png" class="img-fluid animated" alt=""> -->
+
+                    <div class="social-links-mp">
+                        <a href="https://www.facebook.com/appdev.league" target="_blank"><i class="bx bxl-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/appdevleague/" target="_blank"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://linktr.ee/AppDevLeague" target="_blank"><i class="bx bxs-tree"></i></a>
+                        <a href="https://www.youtube.com/channel/UCxhMD8Fvm5LP6QzdrYnFixA" target="_blank"><i class="bx bxl-youtube"></i></a>
+                    </div>
+
+                    <iframe src="https://discord.com/widget?id=794821116933701683&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                 </div>
             </div>
         </div>
@@ -351,7 +362,7 @@
             </div>
 
             </div>
-        </section> 
+        </section>
         <!-- ======= Testimonials Section ======= -->
         <section id="testimonials" class="testimonials">
             <div class="container" data-aos="zoom-in">
@@ -538,31 +549,35 @@
         Check out all our <a href="https://linktr.ee/AppDevLeague" target="_blank">socials</a>
     </div>
 
+    <div class="modal fade" id="events-modal-popout" tabindex="-1" role="dialog" aria-labelledby="events-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="width: 100%!important">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="events-modal-label">Check this out!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe style="display: block;margin:auto" src="https://discord.com/widget?id=794821116933701683&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                    <div class="row" style="width: 350px; margin: auto; padding: 1rem;">
+                        <div class="col">
+                            <a class="btn btn-primary" href="/events" target="_blank">Events</a>
+                        </div>
+                        <div class="col">
+                            <a class="btn btn-primary" href="https://linktr.ee/AppDevLeague" target="_blank">LinkTree™</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         setTimeout(function() {
             document.querySelector("#events-modal").style.transform = "translate(calc(-100% - 20px), calc(-100% - 20px))";
         }, 2000);
     </script>
-
-    <style>
-        .custom-modal {
-            position: fixed;
-            left: 100%;
-            top: 100%;
-            transform: translate(0, calc(-100% - 20px));
-            width: 60%;
-            max-width: 300px;
-            background-color: #ffffff;
-            padding: 10px;
-            box-shadow: 0 0 26px 0 #c4c4c4;
-            transition: transform 0.4s ease-in-out;
-            border-radius: 10px;
-        }
-
-        .custom-modal>p {
-            margin: 0;
-        }
-    </style>
 
     <!-- End Modal -->
 
@@ -581,6 +596,10 @@
     <script src="/assets/vendor/venobox/venobox.min.js"></script>
     <script src="/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="/assets/vendor/aos/aos.js"></script>
+
+    <script>
+        $('#events-modal-popout').modal('show');
+    </script>
 
     <!-- Template Main JS File -->
     <script src="/assets/js/main.js"></script>

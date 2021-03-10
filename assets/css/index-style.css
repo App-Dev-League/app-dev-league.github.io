@@ -1,0 +1,49 @@
+.modal-footer {
+    border: 0 !important;
+}
+
+.modal-header {
+    border: 0 !important;
+}
+
+iframe {
+    display: block !important;
+    margin: auto !important;
+}
+
+.social-links-mp {
+    margin: auto;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    padding-bottom: 1rem;
+}
+
+.social-links-mp>a>i {
+    font-size: 3rem;
+}
+
+.social-links-mp>a {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.custom-modal {
+    position: fixed;
+    left: 100%;
+    top: 100%;
+    transform: translate(0, calc(-100% - 20px));
+    width: 60%;
+    max-width: 300px;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 0 26px 0 #c4c4c4;
+    transition: transform 0.4s ease-in-out;
+    border-radius: 10px;
+}
+
+.custom-modal>p {
+    margin: 0;
+}
