@@ -2158,7 +2158,7 @@ section {
     font-size: 25px;
 }
 
-.card-deck img {
+.card-deck img:not(.partner-logo) {
     height: 250px;
     width: 250px;
 }
