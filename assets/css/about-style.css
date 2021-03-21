@@ -7,24 +7,6 @@
     padding-top: 0rem;
 }
 
-.partner-logo {
-    margin: 1rem auto;
-    max-height: 2.4rem;
-}
-
-
-.partner-logo+p {
-    text-align: left;
-    font-size: 0.95rem;
-    padding: 1rem;
-    margin-bottom: 0;
-}
-
-.partner-logo.togatech {
-    background-color: black;
-    border-radius: 0.25rem;
-}
-
 .sponsordeck {
     margin: 2rem auto !important;
     width: 97% !important;
