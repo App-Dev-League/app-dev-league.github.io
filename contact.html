@@ -97,69 +97,90 @@
 
         <!-- ======= Breadcrumbs ======= -->
         <section id="breadcrumbs" class="breadcrumbs">
-            <div class="container" data-aos="fade-right">
+            <div class="header">
+                <div class="contents">
 
-                <div class="header">
-                    <div class="contents">
+                    <center>
+                        <h1 style="font-family: 'Lato', sans-serif;">Contact Us</h1>
+                    </center>
 
-                        <center>
-                            <h1 style="font-family: 'Lato', sans-serif;">Contact Us</h1>
-                        </center>
+                </div>
+            </div>
 
-                    </div>
+
+            <div id="contactcontain">
+                <div data-aos="fade-right" style="width: min(100%, 64rem); margin: auto">
+                    <center>
+                        <p style="font-size: 5em;margin-bottom: 0;"><i class="far fa-envelope"></i></p>
+                        <p><a href="mailto:contact@appdevleague.org">contact@appdevleague.org</a></p>
+                    </center>
+
+                    <iframe id="contact-frame" src="https://codetools.togatech.org/contact-form/KabirR/XV32iSd9cp/contact" style="overflow:auto;width:100%" frameborder="0"></iframe>
+
+                    <style>
+                        /* Hide scrollbar for Chrome, Safari and Opera */
+                        #contact-frame::-webkit-scrollbar {
+                            display: none;
+                        }
+
+                        /* Hide scrollbar for IE, Edge and Firefox */
+                        #contact-frame {
+                            -ms-overflow-style: none;
+                            /* IE and Edge */
+                            scrollbar-width: none;
+                            /* Firefox */
+                        }
+
+                        #contactcontain {
+                            display: flex;
+                            flex-wrap: wrap;
+                            flex-direction: row;
+
+                            max-width: min(90%, 100rem);
+                            margin: auto;
+                        }
+                    </style>
+                    <script>
+                        // Here "addEventListener" is for standards-compliant web browsers and "attachEvent" is for IE Browsers.
+                        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+                        var eventer = window[eventMethod];
+
+
+                        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+
+                        // Listen to message from child IFrame window
+                        eventer(messageEvent, function(e) {
+
+                            try {
+                                if (e.data.includes("TOGATECH_CODETOOLS_FRAME")) {
+                                    var size = JSON.parse(e.data.replace("TOGATECH_CODETOOLS_FRAME", ""));
+                                    var frame = document.querySelector('#contact-frame');
+                                    frame.width = size.width;
+                                    frame.height = size.height;
+                                }
+                            } catch (err) {
+
+                            }
+
+                        }, false);
+                    </script>
+                    </center>
+
                 </div>
 
 
+                <div class="customcontain" style="margin: 5rem auto auto auto">
+                    <!-- <img src="/assets/img/hero-img.png" class="img-fluid animated" alt=""> -->
 
-                <br />
+                    <div class="social-links-mp">
+                        <a href="https://www.facebook.com/appdev.league" target="_blank"><i class="bx bxl-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/appdevleague/" target="_blank"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://linktr.ee/AppDevLeague" target="_blank"><i class="bx bxs-tree"></i></a>
+                        <a href="https://www.youtube.com/channel/UCxhMD8Fvm5LP6QzdrYnFixA" target="_blank"><i class="bx bxl-youtube"></i></a>
+                    </div>
 
-                <center>
-                    <p style="font-size: 5em;margin-bottom: 0;"><i class="far fa-envelope"></i></p>
-                    <p><a href="mailto:contact@appdevleague.org">contact@appdevleague.org</a></p>
-                </center>
-
-                <iframe id="contact-frame" src="https://codetools.togatech.org/contact-form/KabirR/XV32iSd9cp/contact" style="overflow:auto;width:100%" frameborder="0"></iframe>
-
-                <style>
-                    /* Hide scrollbar for Chrome, Safari and Opera */
-                    #contact-frame::-webkit-scrollbar {
-                        display: none;
-                    }
-
-                    /* Hide scrollbar for IE, Edge and Firefox */
-                    #contact-frame {
-                        -ms-overflow-style: none;
-                        /* IE and Edge */
-                        scrollbar-width: none;
-                        /* Firefox */
-                    }
-                </style>
-                <script>
-                    // Here "addEventListener" is for standards-compliant web browsers and "attachEvent" is for IE Browsers.
-                    var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-                    var eventer = window[eventMethod];
-
-
-                    var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
-
-                    // Listen to message from child IFrame window
-                    eventer(messageEvent, function(e) {
-
-                        try {
-                            if (e.data.includes("TOGATECH_CODETOOLS_FRAME")) {
-                                var size = JSON.parse(e.data.replace("TOGATECH_CODETOOLS_FRAME", ""));
-                                var frame = document.querySelector('#contact-frame');
-                                frame.width = size.width;
-                                frame.height = size.height;
-                            }
-                        } catch (err) {
-
-                        }
-
-                    }, false);
-                </script>
-                </center>
-
+                    <iframe src="https://discord.com/widget?id=794821116933701683&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                </div>
             </div>
         </section><!-- End Breadcrumbs -->
 

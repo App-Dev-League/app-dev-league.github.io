@@ -6,30 +6,6 @@
     border: 0 !important;
 }
 
-iframe {
-    display: block !important;
-    margin: auto !important;
-}
-
-.social-links-mp {
-    margin: auto;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-
-    padding-bottom: 1rem;
-}
-
-.social-links-mp>a>i {
-    font-size: 3rem;
-}
-
-.social-links-mp>a {
-    display: inline;
-    margin: 0 1rem;
-}
-
 .custom-modal {
     position: fixed;
     left: 100%;
