@@ -98,7 +98,7 @@
 
                 <div class="events">
 
-                    <div class="header" style="background-image: url('assets/img/events_background.png');">
+                    <div class="header" style="background-image: url('/assets/img/events_background.png');">
 
                         <div class="contents" style="margin-top: 13px; width: 50%; justify-content: center; margin-left: 25%;">
 
@@ -140,14 +140,60 @@
 
                                 <br />
 
-                                <div class="card card-large" style="margin-top: 40px;">
-                                    <img class="card-img-top" src="/assets/img/events/basic-app-dev-course-jul-2020.jpg" alt="Image">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Appathon</h5>
-                                        <p class="text-muted">2021</p>
-                                        <p class="card-text">This will not be a regular event or webinar, more info coming soon!<br><br></p>
 
+
+                                <div class="card-deck margin-vertical">
+                                    <div class="card">
+                                        <img class="card-img-top" src="/assets/img/events/???.jpeg" alt="Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><a href="/events/adv-md-cs-june-2021">Advanced Multi-Disciplinary CS Course</a></h5>
+                                            <p class="text-muted">June 2021</p>
+                                            <p class="card-text"> Do you already have a strong CS foundation? In this course, we will explore advanced topics in Website Development, Machine Learning, and Competitive Programming. Highly recommended for students with 1-3 years or programming experience.</p>
+                                            <a href="/events/adv-md-cs-june-2021" target="_blank" class="btn btn-primary">Learn More</a>
+                                        </div>
                                     </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="/assets/img/events/???.jpeg" alt="Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><a href="/events/intro-ad-june-2021">Introductory Application Development Course</a></h5>
+                                            <p class="text-muted">June 2021</p>
+                                            <p class="card-text"> Interested in learning how to make apps? Well then this 5-week long course is for you. Students will learn how to construct websites using HTML/CSS/JS, as well as build mobile apps with MIT app inventor. No prior programming experience required.</p>
+                                            <a href="/events/intro-ad-june-2021" target="_blank" class="btn btn-primary">Learn More</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="/assets/img/events/????.jpeg" alt="Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><a href="/events/game-dev-june-2021">Game Development Course</a></h5>
+                                            <p class="text-muted">June 2021</p>
+                                            <p class="card-text">Do you enjoy playing games? Channel your passion for gaming in an educational manner by attending this 5-week long course. Students will learn how to create interactive video games with Pygame and Unity. Limited programming experience recommended.</p>
+                                            <a href="/events/game-dev-june-2021" target="_blank" class="btn btn-primary">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-deck margin-vertical" style="width: 66%">
+                                    <div class="card">
+                                        <img class="card-img-top" src="/assets/img/events/basic-app-dev-course-jul-2020.jpg" alt="Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Appathon</h5>
+                                            <p class="text-muted">2021</p>
+                                            <p class="card-text">This will not be a regular event or webinar, more info coming soon!<br><br></p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <img class="card-img-top" src="https://asset-cdn.schoology.com/system/files/imagecache/profile_reg/grouplogos/logo-1843357100_5d7b1ea567eda.png?1568349861" alt="Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">App Dev Bowl</h5>
+                                            <p class="text-muted">Oct 2021</p>
+                                            <p class="card-text"> Ready to use your skills you’ve learned at ADL? Compete in teams of 3-4 in the AppDev bowl, which will be a series of 30 questions that teams answer. <b>Win up to $100 for the first prize!</b></p>
+
+                                        </div>
+                                    </div>
+
+
                                 </div>
 
 
@@ -187,17 +233,26 @@
                                     }
 
                                     .card-deck img {
-                                        width: calc(100% + 20px);
+                                        width: calc(100% + 20px) !important;
                                         height: 250px;
                                         object-fit: cover;
                                         margin-left: -10px;
                                         margin-top: -10px;
                                     }
 
+                                    .card-body>a.btn {
+                                        margin: auto auto 0 auto;
+                                    }
+
+                                    .card-body {
+                                        display: flex;
+                                        flex-direction: column;
+                                        flex-wrap: wrap;
+                                    }
+
                                     .card>.card-img-top {
                                         height: 250px;
                                         object-fit: cover;
-
                                     }
 
                                     .card>.card-button {
@@ -228,8 +283,18 @@
                                 </style>
 
 
-
                                 <div class="card-deck" style="margin-top: 40px;">
+
+                                    <div class="card">
+                                        <img class="card-img-top" src="/assets/img/events/codeartm2021.jpeg" alt="Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><a href="/events/code-art-speaker-mar-2021">Code/Art Speaker Event</a></h5>
+                                            <p class="text-muted">Mar 2021</p>
+                                            <p class="card-text"> App Dev League will be giving a workshop at the Code/Art Festival on application development with MIT app inventor!</p>
+                                            <a href="/events/code-art-speaker-mar-2021" target="_blank" class="btn btn-primary">Learn More</a>
+                                        </div>
+                                    </div>
+
                                     <div class="card">
                                         <img class="card-img-top" src="/assets/img/events/december-camp-dec-2020.jpeg" alt="Image">
                                         <div class="card-body">
@@ -239,35 +304,34 @@
                                             <a href="/events/december-camp-dec-2020" target="_blank" class="btn btn-primary">Learn More</a>
                                         </div>
                                     </div>
-                                    <div class="card">
 
+                                    <div class="card">
                                         <img class="card-img-top" src="/assets/img/events/learn-to-code-workshop-nov-2020.jpg" alt="Image">
                                         <div class="card-body">
                                             <h5 class="card-title"><a href="/events/learn-to-code-workshop-nov-2020" target="_blank">Learn to Code Webinar</a></h5>
                                             <p class="text-muted">Nov 2020</p>
                                             <p class="card-text">This 90 min interactive workshop will be geared towards students with no prior coding experience. You will learn about computer science, how to code in JavaScript, and build 3 cool projects! <br><br></p>
-                                            <br />
-                                            <br />
                                             <a href="/events/learn-to-code-workshop-nov-2020" target="_blank" class="btn btn-primary">Learn More</a>
-
                                         </div>
                                     </div>
+
+
+                                </div>
+
+
+                                <div class="card-deck" style="margin-top: 40px">
+
                                     <div class="card">
                                         <img class="card-img-top" src="/assets/img/events/app-dev-webinar-sep-2020.png" alt="Image">
                                         <div class="card-body">
                                             <h5 class="card-title"><a href="/events/app-dev-webinar-sep-2020" target="_blank">App Dev Webinar</a></h5>
                                             <p class="text-muted">Sep 2020</p>
                                             <p class="card-text">No prior programming experience needed. This 2-hour long interactive webinar will introduce students to computer science generally and will focus on website and application development.</p>
-                                            <br>
-                                            <br>
                                             <a href="/events/app-dev-webinar-sep-2020" target="_blank" class="btn btn-primary">Learn More</a>
 
                                         </div>
                                     </div>
 
-                                </div>
-
-                                <div class="card-deck" style="margin-top: 40px">
                                     <div class="card">
                                         <img class="card-img-top" src="/assets/img/events/ai-webinar-sep-2020.jpg" alt="Image">
                                         <div class="card-body">
@@ -287,6 +351,13 @@
                                             <a href="/events/intro-to-programming-course-jul-2020" target="_blank" class="btn btn-primary">Learn More</a>
                                         </div>
                                     </div>
+
+
+                                </div>
+
+
+
+                                <div class="card-deck" style="margin-top: 40px; width: 66%">
                                     <div class="card">
                                         <img class="card-img-top" src="/assets/img/events/basic-web-dev-course-jul-2020.jpg" alt="Image">
                                         <div class="card-body">
@@ -297,18 +368,14 @@
                                         </div>
                                     </div>
 
-                                </div>
-
-
-
-
-                                <div class="card card-large" style="margin-top: 40px;">
-                                    <img class="card-img-top" src="/assets/img/events/basic-app-dev-course-jul-2020.jpg" alt="Image">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><a href="/events/basic-app-dev-course-jul-2020" target="_blank">Basic App Dev</a></h5>
-                                        <p class="text-muted">Jul 2020</p>
-                                        <p class="card-text">No prior programming experience needed. By the end of this 4-week long course, students will be able build over 10 apps. They will also become more creative as the course progresses.<br><br></p>
-                                        <a href="/events/basic-app-dev-course-jul-2020" target="_blank" class="btn btn-primary">Learn More</a>
+                                    <div class="card">
+                                        <img class="card-img-top" src="/assets/img/events/basic-app-dev-course-jul-2020.jpg" alt="Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><a href="/events/basic-app-dev-course-jul-2020" target="_blank">Basic App Dev</a></h5>
+                                            <p class="text-muted">Jul 2020</p>
+                                            <p class="card-text">No prior programming experience needed. By the end of this 4-week long course, students will be able build over 10 apps. They will also become more creative as the course progresses.<br><br></p>
+                                            <a href="/events/basic-app-dev-course-jul-2020" target="_blank" class="btn btn-primary">Learn More</a>
+                                        </div>
                                     </div>
                                 </div>
 

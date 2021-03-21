@@ -30,22 +30,20 @@
     width: 97% !important;
 }
 
-.infotop {
-    max-width: 50%;
-    margin-left: 20%;
-}
-
 .info-box {
+    margin: auto;
     margin-bottom: 2rem;
 }
 
 .info-box>div.card {
-    padding: 2rem;
+    padding: 1rem;
     padding-bottom: 1rem;
+    border-top: 1rem;
+    border-top-style: solid;
 }
 
 .customWideContainer {
-    width: 80%;
+    width: min(80%, 100rem);
     align-items: center;
     align-self: center;
     align-content: center;
