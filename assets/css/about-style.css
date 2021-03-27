@@ -3,6 +3,24 @@
     width: 97% !important;
 }
 
+.mosh-area {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-image: url("../img/aboutUsHeaderImage.png");
+    background-repeat:no-repeat;
+}
+
+.topSection {
+    margin-top: 12px;
+}
+
+.topSectionContent {
+    color: #fff;
+    font-min-size: 100px;
+}
+
 #sponsors {
     padding-top: 0rem;
 }
