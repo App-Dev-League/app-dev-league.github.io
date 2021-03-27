@@ -2114,10 +2114,17 @@ section {
 
 .about2-content {
     line-height: 250%;
-    align-items: center;
     width: 90%;
     margin-top: -10%;
     padding-left: 10%;
+}
+
+.bio-cent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100% !important;
+    margin: auto;
 }
 
 .header {
