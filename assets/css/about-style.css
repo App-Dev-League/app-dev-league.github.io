@@ -8,10 +8,10 @@
     width: 100%;
     position: relative;
     z-index: 1;
+    transform: translateY(-70px);
 }
 
 .topSection {
-    margin-top: 12px;
 }
 
 .topSectionContent {
@@ -88,7 +88,7 @@
 }
 
 .card-custom:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .card-deck-custom {
