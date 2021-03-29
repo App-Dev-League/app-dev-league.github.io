@@ -201,7 +201,7 @@
         margin: 0,
         center: true,
         nav: true,
-        navText: ['<i class="fa fa-chevron-left" style="font-size: 25px" aria-hidden="false">←</i>', '<i class="fa fa-chevron-right" style="font-size: 25px" aria-hidden="false">→</i>'],
+        navText: ['<button class="fa fa-chevron-left no-outline" style="font-size: 25px; outline: none" aria-hidden="false">←</button>', '<button class="fa fa-chevron-right no-outline" style="font-size: 25px; outline: none" aria-hidden="false">→</button>'],
         responsive: {
             0: {
                 items: 1

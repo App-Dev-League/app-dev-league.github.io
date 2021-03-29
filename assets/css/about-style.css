@@ -87,6 +87,10 @@
     transition: all 0.3s ease-in-out;
 }
 
+.card.card-custom {
+    font-family: "ui-sans-serif", sans-serif; !important;
+}
+
 .card-custom:hover {
     transform: scale(1.02);
 }

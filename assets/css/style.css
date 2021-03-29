@@ -15,6 +15,14 @@ a:hover {
     text-decoration: none;
 }
 
+.no-outline {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+
 h1,
 h2,
 h3,
