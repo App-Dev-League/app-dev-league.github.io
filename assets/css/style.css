@@ -2163,8 +2163,8 @@ section {
 
 #about2 .about2-img::before {
     position: absolute;
-    left: -100px;
-    top: -30px;
+    left: -70px;
+    top: -25px;
     width: 90%;
     height: 92%;
     z-index: -1;
