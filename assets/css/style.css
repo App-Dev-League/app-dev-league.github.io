@@ -2007,7 +2007,7 @@ section {
 }
 
 #testimonials .quote {
-    padding: 30px 50px 30px 30px;
+    padding: 10px 10px 10px 10px;
     background: #fff;
     border-left: 3px solid #2b3c6d;
 }
@@ -2041,14 +2041,14 @@ section {
     font-weight: bold;
     margin: 10px 0 5px 0;
     color: #111;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 #testimonials .testimonial-item h4 {
     font-size: 14px;
     color: #999;
     margin: 0 0 15px 0;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 #testimonials .testimonial-item p {

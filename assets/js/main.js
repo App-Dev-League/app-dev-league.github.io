@@ -201,13 +201,13 @@
         margin: 0,
         center: true,
         nav: true,
-        navText: ['<button class="fa fa-chevron-left no-outline" style="font-size: 25px; outline: none" aria-hidden="false">←</button>', '<button class="fa fa-chevron-right no-outline" style="font-size: 25px; outline: none" aria-hidden="false">→</button>'],
+        navText: ['<button class="fa fa-chevron-left no-outline" style="font-size: 25px; outline: none; transform: translateX(-10px)" aria-hidden="false">←</button>', '<button class="fa fa-chevron-right no-outline" style="font-size: 25px; outline: none;  transform: translateX(10px)" aria-hidden="false">→</button>'],
         responsive: {
             0: {
                 items: 1
             },
             576: {
-                items: 2
+                items: 1
             },
             768: {
                 items: 3
