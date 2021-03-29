@@ -1966,6 +1966,34 @@ section {
 
 /* Testimonials Section
 --------------------------------*/
+.mosh-team-slides {
+    position: relative;
+    z-index: 2;
+}
+
+.mosh-team-area{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.single-team-slide:hover .team-meta-info span,
+.team-social-info > a:hover {
+    color: #4a7aec;
+}
+
+.single-team-slide:hover .team-thumbnail:after {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+}
+
+
+.mosh-team-slides .owl-next {
+    left: auto;
+    right: -20px;
+}
+
+
+
 #testimonials {
     padding: 60px 0;
 }
