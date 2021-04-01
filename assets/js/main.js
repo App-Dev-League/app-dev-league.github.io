@@ -201,6 +201,7 @@
         margin: 0,
         center: true,
         nav: true,
+        startPosition: 1,
         navText: ['<button class="fa fa-chevron-left no-outline" style="font-size: 25px; outline: none; transform: translateX(-10px)" aria-hidden="false">←</button>', '<button class="fa fa-chevron-right no-outline" style="font-size: 25px; outline: none;  transform: translateX(10px)" aria-hidden="false">→</button>'],
         responsive: {
             0: {
