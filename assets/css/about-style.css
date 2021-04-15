@@ -89,6 +89,8 @@
 
 .card.card-custom {
     font-family: "ui-sans-serif", sans-serif; !important;
+    margin-bottom: 40px;
+    min-width: 40%;
 }
 
 .card-custom:hover {
@@ -96,18 +98,18 @@
 }
 
 .card-deck-custom {
-    width: 95%;
+    width: 100%;
     margin-left: 0;
 }
 
 .card-deck-custom-small {
-    width: 80%;
+    width: 100%;
     margin-left: -2%;
 }
 
 .card-img-custom-small {
-    width: 50px !important;
-    height: 50px !important;
+    width: auto !important;
+    height: 45% !important;
     position: absolute;
     right: 10px;
     top: 10px;
@@ -119,7 +121,7 @@
 .card-body-custom-small {
     width: calc(100% - 50px);
     text-align: left;
-    margin: 0;
+    margin-bottom: 40px;
 }
 
 .card-body-custom-small>.card-title {
@@ -130,6 +132,9 @@
     #about2 {
         width: 120%;
         margin-left: -10%;
+    }
+    .card-custom {
+        margin-bottom: 40px !important;
     }
 }
 
@@ -144,6 +149,9 @@
         margin-left: 0;
     }
 
+    .card-custom {
+        margin-bottom: 40px !important;
+    }
     .card-header-custom {
         height: 210px;
     }
@@ -158,21 +166,30 @@
         margin-bottom: 85px;
     }
 
-    .card-img-custom {
-        width: 200px !important;
-        height: 200px !important;
+    /*.card-img-custom {*/
+    /*    width: 200px !important;*/
+    /*    height: 200px !important;*/
+    /*}*/
+    .card-custom {
+        margin-bottom: 40px !important;
+        min-width: 40%;
     }
 }
 
 @media (max-width: 1000px) {
     .card-deck-custom-small {
-        width: 66%;
+        width: 100%;
         margin-left: 0;
     }
 
     .card-deck-custom {
         width: 90%;
         margin-left: 0;
+    }
+
+    .card-custom {
+        margin-bottom: 40px !important;
+        min-width: 40%;
     }
 
     .card-img-custom {
@@ -195,6 +212,7 @@
 
     .card-custom {
         margin-bottom: 40px !important;
+        min-width: 100%;
     }
 
     .card-heading-custom {
@@ -211,6 +229,7 @@
 
     .card-custom {
         margin-bottom: 40px !important;
+        min-width: 100%;
     }
 
     .card-deck-custom-small {
@@ -245,6 +264,7 @@
 
     .card-custom {
         margin-bottom: 40px !important;
+        min-width: 100%;
     }
 
     .card-header-custom {
