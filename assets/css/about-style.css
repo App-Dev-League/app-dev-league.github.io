@@ -76,7 +76,6 @@
 
 .card-body-custom {
     padding: 10px;
-    margin: 10px;
     margin-top: 2.5rem;
 }
 
@@ -94,13 +93,26 @@
     transition: all 0.3s ease-in-out;
 }
 
+.card-custom-three-large {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 10px 29px 0 #afafaf;
+    transition: all 0.3s ease-in-out;
+}
+
 .card.card-custom {
     font-family: "ui-sans-serif", sans-serif; !important;
     margin-bottom: 40px;
-    min-width: 40%;
+    min-width: 30%;
 }
 
 .card.card-custom-three {
+    font-family: "ui-sans-serif", sans-serif; !important;
+    margin-bottom: 40px;
+    min-width: 30%;
+}
+
+.card.card-custom-three-large {
     font-family: "ui-sans-serif", sans-serif; !important;
     margin-bottom: 40px;
     min-width: 30%;
@@ -110,6 +122,10 @@
     transform: scale(1.01);
 }
 .card-custom-three:hover {
+    transform: scale(1.01);
+}
+
+.card-custom-three-large:hover {
     transform: scale(1.01);
 }
 
@@ -188,10 +204,14 @@
     /*}*/
     .card-custom {
         margin-bottom: 40px !important;
-        min-width: 40%;
+        min-width: 30%;
     }
 
     .card-custom-three {
+        margin-bottom: 40px !important;
+        min-width: 30%;
+    }
+    .card-custom-three-large {
         margin-bottom: 40px !important;
         min-width: 30%;
     }
@@ -210,9 +230,13 @@
 
     .card-custom {
         margin-bottom: 40px !important;
-        min-width: 40%;
+        min-width: 30%;
     }
     .card-custom-three {
+        margin-bottom: 40px !important;
+        min-width: 30%;
+    }
+    .card-custom-three-large {
         margin-bottom: 40px !important;
         min-width: 30%;
     }
@@ -244,6 +268,10 @@
         margin-bottom: 40px !important;
         min-width: 100%;
     }
+    .card-custom-three-large {
+        margin-bottom: 40px !important;
+        min-width: 100%;
+    }
 
     .card-heading-custom {
         font-size: 1.1em !important;
@@ -266,7 +294,10 @@
         margin-bottom: 40px !important;
         min-width: 100%;
     }
-
+    .card-custom-three-large {
+        margin-bottom: 40px !important;
+        min-width: 100%;
+    }
     .card-deck-custom-small {
         width: 80%;
         margin-left: -2%;
@@ -303,6 +334,10 @@
     }
 
     .card-custom-three {
+        margin-bottom: 40px !important;
+        min-width: 100%;
+    }
+    .card-custom-three-large {
         margin-bottom: 40px !important;
         min-width: 100%;
     }
