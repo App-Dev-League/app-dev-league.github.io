@@ -76,7 +76,7 @@
 
 .card-body-custom {
     padding: 10px;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
 }
 
 .card-custom {
@@ -141,7 +141,7 @@
 
 .card-img-custom-small {
     width: auto !important;
-    height: 45% !important;
+    height: 80% !important;
     position: absolute;
     right: 10px;
     top: 10px;
