@@ -102,14 +102,18 @@
 
     <div class="container">
         <div class="row">
+            
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
                  data-aos="fade-up" data-aos-delay="200">
-                <h1>App Dev League</h1>
-                <h2>Diversifying the Developer Community</h2>
+                 
+                 <img src="assets/img/favicon.png" style="max-width: 150px;">
+                <h1>APP DEV LEAGUE</h1>
+                <h2 style="font-size: 20px;">Diversifying the Application Developer Community</h2>
                 <div class="d-lg-flex">
                     <a href="/get-involved" class="btn-get-started scrollto">Get Involved</a>
                     <a href="/events" class="btn-get-started" target="_blank" style="margin-left: 1rem">View Events</a>
                 </div>
+                
             </div>
             <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
                 <img src="/assets/img/hero-img.png" class="img-fluid" alt="">
@@ -136,19 +140,20 @@
 
             <div class="section-title">
                 <h2>About Us</h2>
+                <h4 style="font-size: 18px; color: rgb(86, 91, 97)">Largest Coalition of High School Student-Run App Development Teachers</h4>
             </div>
 
             <div class="row content">
                 <div class="col-lg-6">
                     <p>
-                        App Dev League, a student-led non profit, is devoted to bringing computer science education to
-                        underrepresented students. We hope to
+                        App Dev League, a student-led nonprofit, is devoted to bringing computer science education to
+                        underrepresented students. We specifically focus on application development and AI. Our goals include
                     </p>
                     <ul>
-                        <li><i class="ri-check-double-line"></i> Foster support for students who lack CS opportunities
+                        <li><i class="ri-check-double-line"></i> <b>Fostering</b> support for students who lack CS opportunities
                         </li>
-                        <li><i class="ri-check-double-line"></i> Increase diversity in the technology workforce</li>
-                        <li><i class="ri-check-double-line"></i> Empower students to make a social impact in their
+                        <li><i class="ri-check-double-line"></i> <b>Increasing</b> the diversity in STEM communities and the workforce</li>
+                        <li><i class="ri-check-double-line"></i> <b>Empowering</b> students to make a social impact in their
                             communities
                         </li>
                     </ul>
@@ -156,10 +161,10 @@
                 <div class="col-lg-6 pt-4 pt-lg-0">
                     <p>
                         The COVID global pandemic has affected billions of individuals worldwide and most importantly
-                        students’ education. By attending our monthly events and summer/winter programs, these students
-                        will have the power to make a global impact right from their homes!
+                        <b>students’ education</b>. Through our various iniatiatives from a <b>free teaching app</b> to our monthly events and <b>conferences</b>, our students 
+                        will have the power to make a <b>global impact</b> right from their homes!
                     </p>
-                    <a href="/about" class="btn-learn-more">Learn More</a>
+                    <a href="/about" class="btn-learn-more">Learn More About Us</a>
                 </div>
             </div>
 
@@ -229,24 +234,28 @@
             <div class="row counters" data-aos="fade-up" data-aos-delay="100">
 
                 <div class="col-lg-3 col-6 text-center">
+                    <span data-toggle="counter-up">1500+</span>
+                    <p>Students Reached</p>
+                </div>
+                
+                <div class="col-lg-3 col-6 text-center">
                     <span data-toggle="counter-up">30+</span>
                     <p>Schools Worked With</p>
                 </div>
 
                 <div class="col-lg-3 col-6 text-center">
-                    <span data-toggle="counter-up">8</span>
+                    <span data-toggle="counter-up">10</span>
                     <p>Events Hosted</p>
                 </div>
 
-                <div class="col-lg-3 col-6 text-center">
-                    <span data-toggle="counter-up">1500+</span>
-                    <p>Students Reached</p>
-                </div>
 
                 <div class="col-lg-3 col-6 text-center">
-                    <span data-toggle="counter-up">50+</span>
-                    <p>Hours Spent Teaching</p>
+                    <span data-toggle="counter-up">4</span>
+                    <p>Partners</p>
                 </div>
+
+
+                
 
                 <script>
                     var updatedCounters = false;
@@ -267,7 +276,7 @@
                             }
                         }
                     });
-                    var finalCounts = [30, 8, 1500, 50];
+                    var finalCounts = [1500, 30, 10, 4];
                     for (var i = 0; i < document.querySelectorAll('span[data-toggle="counter-up"]').length; i++) {
                         if (document.querySelectorAll('span[data-toggle="counter-up"]')[i].innerHTML.includes("+")) {
                             document.querySelectorAll('span[data-toggle="counter-up"]')[i].innerHTML = "0+";
@@ -287,21 +296,21 @@
                         var element2 = document.querySelectorAll('span[data-toggle="counter-up"]')[1];
                         for (let i = 0; i <= finalCounts[1]; i++) {
                             setTimeout(() => {
-                                element2.innerHTML = i;
+                                element2.innerHTML = i + "+";
                             }, (1500 * i) / finalCounts[1]);
                         }
 
                         var element3 = document.querySelectorAll('span[data-toggle="counter-up"]')[2];
                         for (let i = 0; i <= finalCounts[2]; i++) {
                             setTimeout(() => {
-                                element3.innerHTML = i + "+";
+                                element3.innerHTML = i;
                             }, (1500 * i) / finalCounts[2]);
                         }
 
                         var element4 = document.querySelectorAll('span[data-toggle="counter-up"]')[3];
                         for (let i = 0; i <= finalCounts[3]; i++) {
                             setTimeout(() => {
-                                element4.innerHTML = i + "+";
+                                element4.innerHTML = i;
                             }, (1500 * i) / finalCounts[3]);
                         }
                     }
