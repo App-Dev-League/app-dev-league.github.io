@@ -144,6 +144,10 @@
     margin-left: -2%;
 }
 
+.card-deck-custom-small-one {
+    width: 33%;
+    margin-left: -2%;
+}
 .card-img-custom-small {
     width: auto !important;
     height: 80% !important;
@@ -183,6 +187,10 @@
 
     .card-deck-custom-small-two {
         width: 66%;
+        margin-left: -2%;
+    }
+    .card-deck-custom-small-one {
+        width: 33%;
         margin-left: -2%;
     }
 
@@ -233,6 +241,10 @@
         margin-left: 0;
     }
     .card-deck-custom-small-two {
+        width: 100%;
+        margin-left: 0;
+    }
+    .card-deck-custom-small-one {
         width: 100%;
         margin-left: 0;
     }
@@ -321,6 +333,11 @@
         margin-left: -2%;
     }
 
+    .card-deck-custom-small-one {
+        width: 80%;
+        margin-left: -2%;
+    }
+
     .card-header-custom {
         height: 170px;
     }
@@ -346,6 +363,12 @@
         margin-left: 0;
     }
     .card-deck-custom-small-two {
+        display: block;
+        width: calc(100% - 100px);
+        margin-left: 0;
+    }
+
+    .card-deck-custom-small-one {
         display: block;
         width: calc(100% - 100px);
         margin-left: 0;
