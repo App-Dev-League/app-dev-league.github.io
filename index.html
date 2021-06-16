@@ -736,11 +736,13 @@
 <!-- ======= Modal ======= -->
 <div class="custom-modal" id="events-modal">
     <p><i style="cursor: pointer;" class="far fa-times-circle"
-          onclick='this.parentNode.parentNode.style.transform = "translate(0, calc(-100% - 20px))";'></i>
+          onclick='this.parentNode.parentNode.style.transform = "translate(0, calc(-100% - 30px))";'></i>
 
-        &nbsp;&nbsp;&nbsp;Join our community <a href="https://discord.com/invite/nzzV6xu6jN">Discord</a>!<br>
-        &emsp;&emsp;Reference the <a href="/events" target="_blank">events</a>!<br>
-        &emsp;&emsp;Check out our <a href="https://linktr.ee/AppDevLeague" target="_blank">socials</a>!</p>
+        <ul>
+            <li>Join our community <a href="https://discord.com/invite/nzzV6xu6jN">Discord</a></li>
+            <li>Reference the <a href="/events" target="_blank">events</a></li>
+            <li>Check out our <a href="https://linktr.ee/AppDevLeague" target="_blank">socials</a></li>
+        </ul>
 </div>
 
 <div class="modal fade" id="events-modal-popout" tabindex="-1" role="dialog" aria-labelledby="events-modal-label"
@@ -773,7 +775,7 @@
 
 <script>
     setTimeout(function () {
-        document.querySelector("#events-modal").style.transform = "translate(calc(-100% - 20px), calc(-100% - 20px))";
+        document.querySelector("#events-modal").style.transform = "translate(calc(-100% - 30px), calc(-100% - 30px))";
     }, 2000);
 </script>
 
